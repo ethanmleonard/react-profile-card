@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.border {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white ;
+  width: 350px;
+  margin: 10px;
+  text-align: center;
+}
+
+.profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button:focus {
+  background-color: aqua;
+}
+
+#name {
+  margin-right: 7%;
+}
+
+#skills {
+  margin-left: 7%;
+}
+
+ img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.like-counter {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.like-counter p {
+  margin-right: 5px;
 }
